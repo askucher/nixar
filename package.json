@@ -1,70 +1,18 @@
 {
-  "_npmUser": {
-    "name": "askucher",
-    "email": "a.stegno@gmail.com"
-  },
-  "_npmVersion": "0.1.00",
-  "_from": "prelude@>0.1",
-  "dist": {},
-  "_id": "prelude@0.6.0",
   "files": [
+    "compiled-commands",
     "nixar",
     "nixar.js"
   ],
   "name": "nixar",
   "description": "map, filter and other functions for unix bash",
-  "peerDependencies": {},
-  "keywords": [],
-  "bin": {
-    "max": "./nixar",
-    "content": "./nixar",
-    "min": "./nixar",
-    "columns": "./nixar",
-    "split": "./nixar",
-    "maximum": "./nixar",
-    "minimum": "./nixar",
-    "remove": "./nixar",
-    "at": "./nixar",
-    "drop": "./nixar",
-    "take": "./nixar",
-    "last": "./nixar",
-    "tail": "./nixar",
-    "sort": "./nixar",
-    "concat": "./nixar",
-    "glob": "./nixar",
-    "exec": "./nixar",
-    "sum": "./nixar",
-    "unique": "./nixar",
-    "filter": "./nixar",
-    "append": "./nixar",
-    "map": "./nixar",
-    "average": "./nixar",
-    "find": "./nixar",
-    "replace": "./nixar",
-    "length": "./nixar",
-    "lower": "./nixar",
-    "upper": "./nixar",
-    "trim": "./nixar",
-    "count": "./nixar",
-    "head": "./nixar",
-    "reverse": "./nixar"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:askucher/prelude.git"
-  },
+  "version": "0.1.583",
+  "uperversion": "0.1",
+  "subversion": 583,
+  "homepage": "https://github.com/gruntjs/",
   "author": {
     "name": "xm",
     "url": ""
-  },
-  "homepage": "https://github.com/gruntjs/",
-  "subversion": 461,
-  "uperversion": "0.1",
-  "version": "0.1.461",
-  "maintainers": [],
-  "directories": {},
-  "bugs": {
-    "url": "https://github.com/askucher/grunt-xonom/issues"
   },
   "licenses": [
     {
@@ -79,13 +27,63 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "xonom": "^0.1.71",
     "colors": "^1.1.2",
     "easy-table": "^1.0.0",
     "glob": "^5.0.14",
     "node-syntaxhighlighter": "^0.8.1",
     "prelude-ls": "^1.1.2",
-    "readline": "0.0.8"
+    "readline": "0.0.8",
+    "xonom": "^0.1.74"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "peerDependencies": {},
+  "keywords": [],
+  "bin": {
+    "map": "./nixar",
+    "count": "./nixar",
+    "unique": "./nixar",
+    "file": "./nixar",
+    "find": "./nixar",
+    "split": "./nixar",
+    "ignore": "./nixar",
+    "average": "./nixar",
+    "fs": "./nixar",
+    "remove": "./nixar",
+    "columns": "./nixar",
+    "last": "./nixar",
+    "take": "./nixar",
+    "replace": "./nixar",
+    "length": "./nixar",
+    "filter": "./nixar",
+    "columify": "./nixar",
+    "lower": "./nixar",
+    "exclude": "./nixar",
+    "reverse": "./nixar",
+    "sort": "./nixar",
+    "substr": "./nixar",
+    "drop": "./nixar",
+    "log": "./nixar",
+    "trim": "./nixar",
+    "upper": "./nixar",
+    "at": "./nixar",
+    "before": "./nixar",
+    "concat": "./nixar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:askucher/prelude.git"
+  },
+  "_id": "prelude@0.6.0",
+  "dist": {},
+  "_from": "prelude@>0.1",
+  "_npmVersion": "0.1.00",
+  "_npmUser": {
+    "name": "askucher",
+    "email": "a.stegno@gmail.com"
+  },
+  "maintainers": [],
+  "directories": {},
+  "bugs": {
+    "url": "https://github.com/askucher/grunt-xonom/issues"
+  }
 }

@@ -1,1 +1,1 @@
-npm install -g nixar
+npm install -g nixartest.logtest.log
