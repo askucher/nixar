@@ -44,7 +44,7 @@
               var i$, to$, results$ = [];
               switch (false) {
               case !(args.length < 2):
-                return index(str);
+                return getInt(str);
               default:
                 for (i$ = args[0], to$ = args[1]; i$ <= to$; ++i$) {
                   results$.push(i$);
@@ -105,7 +105,7 @@
                 case 'line':
                   data = children();
                   if (data !== null) {
-                    return "\n" + data;
+                    return data + '\n';
                   } else {
                     return "";
                   }
@@ -117,7 +117,9 @@
                 }
               };
               return parser.parse(nsh.highlight(code, language), function(err, data){
-                return callback(process(data.root()[0]));
+                var res;
+                res = process(data.root()[0]);
+                return callback(res.substr(0, res.lastIndexOf('\n')));
               });
             } else {
               replacer = function(str){

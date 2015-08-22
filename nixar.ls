@@ -9,7 +9,6 @@ module.exports = (cmd)->
       commands: []
     .service \parser, (p)->
       numbers: (mask, last)->
-        #console.log \numbers, mask, last
         return [0] if (mask ? "") is ""
         index = (str)->
           str |> parse-int |> (-> it - 1)
@@ -22,14 +21,13 @@ module.exports = (cmd)->
              str |> p.split \- 
                  |> p.map -> get-int it
           res =
-            | args.length < 2 => index str
+            | args.length < 2 => get-int str
             | _ => [args.0 to args.1]
           res
         mask |> p.split(/[ ]+/)
              |> p.map transform
              |> p.flatten
     .service \cat, ->
-      
       compile: ->
         fs = require \fs
         moment = require \moment
@@ -60,14 +58,15 @@ module.exports = (cmd)->
                 when \line
                   data = children!
                   if data isnt null
-                    "\n" + data
+                    data + \\n
                   else ""
                 when ''
                   children!
                 else
                   children \yellow
             parser.parse nsh.highlight(code, language), (err, data) ->
-                callback process(data.root!.0)
+                res = process(data.root!.0)
+                callback res.substr(0, res.last-index-of(\\n))
           else 
               replacer = (str)->
                 type = str.match('class="([a-z]+)"').1

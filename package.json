@@ -1,93 +1,102 @@
 {
-    "_from": "prelude@>0.1",
-    "dist": {},
-    "_id": "prelude@0.6.0",
-    "files": [
-        "nixar",
-        "nixar.js"
-    ],
-    "name": "nixar",
-    "description": "map, filter and other functions for unix bash",
-    "version": "0.1.2003",
-    "uperversion": "0.1",
-    "dependencies": {
-        "xonom": "^0.1.71",
-        "colors": "^1.1.2",
-        "easy-table": "^1.0.0",
-        "glob": "^5.0.14",
-        "node-syntaxhighlighter": "^0.8.1",
-        "prelude-ls": "^1.1.2",
-        "readline": "0.0.8"
-    },
-    "devDependencies": {},
-    "peerDependencies": {},
-    "keywords": [],
-    "bin": {
-        "after": "./refs/after",
-        "before": "./refs/before",
-        "cat": "./refs/cat",
-        "clipboard": "./refs/clipboard",
-        "col": "./refs/col",
-        "concat": "./refs/concat",
-        "count": "./refs/count",
-        "drop": "./refs/drop",
-        "exclude": "./refs/exclude",
-        "file": "./refs/file",
-        "filter": "./refs/filter",
-        "fs": "./refs/fs",
-        "length": "./refs/length",
-        "log": "./refs/log",
-        "lower": "./refs/lower",
-        "map": "./refs/map",
-        "mark": "./refs/mark",
-        "max": "./refs/max",
-        "min": "./refs/min",
-        "nixar": "./refs/nixar",
-        "order": "./refs/order",
-        "remove": "./refs/remove",
-        "replace": "./refs/replace",
-        "reverse": "./refs/reverse",
-        "row": "./refs/row",
-        "split": "./refs/split",
-        "substr": "./refs/substr",
-        "sum": "./refs/sum",
-        "table": "./refs/table",
-        "take": "./refs/take",
-        "trim": "./refs/trim",
-        "turn": "./refs/turn",
-        "uniq": "./refs/uniq",
-        "upper": "./refs/upper"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:askucher/prelude.git"
-    },
-    "author": {
-        "name": "xm",
-        "url": ""
-    },
-    "homepage": "https://github.com/gruntjs/",
-    "subversion": 2003,
-    "_npmVersion": "0.1.00",
-    "_npmUser": {
-        "name": "askucher",
-        "email": "a.stegno@gmail.com"
-    },
-    "maintainers": [],
-    "directories": {},
-    "bugs": {
-        "url": "https://github.com/askucher/grunt-xonom/issues"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "https://github.com/askucher/grunt-xonom/blob/master/LICENSE-MIT"
-        }
-    ],
-    "engines": {
-        "node": ">= 0.8.0"
-    },
-    "scripts": {
-        "test": "grunt test"
+  "bugs": {
+    "url": "https://github.com/askucher/grunt-xonom/issues"
+  },
+  "directories": {},
+  "maintainers": [],
+  "_npmUser": {
+    "name": "askucher",
+    "email": "a.stegno@gmail.com"
+  },
+  "_npmVersion": "0.1.00",
+  "_from": "prelude@>0.1",
+  "dist": {},
+  "_id": "prelude@0.6.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:askucher/prelude.git"
+  },
+  "author": {
+    "name": "xm",
+    "url": ""
+  },
+  "homepage": "https://github.com/gruntjs/",
+  "subversion": 2008,
+  "uperversion": "0.1",
+  "version": "0.1.2008",
+  "description": "map, filter and other functions for unix bash",
+  "name": "nixar",
+  "files": [
+    "nixar.js",
+    "compiled-commands",
+    "refs",
+    "docs"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/askucher/grunt-xonom/blob/master/LICENSE-MIT"
     }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "moment": "^2.10.6",
+    "html-to-json": "^0.5.1",
+    "highlight": "^0.2.3",
+    "glob-all": "^3.0.1",
+    "glob": "^5.0.14",
+    "event-stream": "^3.3.1",
+    "yargs": "^3.21.0",
+    "xonom": "^0.1.74",
+    "readline": "0.0.8",
+    "prelude-ls": "^1.1.2",
+    "picture-tube": "^1.0.0",
+    "node-syntaxhighlighter": "^0.8.1",
+    "colors": "^1.1.2",
+    "easy-table": "^1.0.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "keywords": [],
+  "bin": {
+    "turn": "./refs/turn",
+    "trim": "./refs/trim",
+    "concat": "./refs/concat",
+    "col": "./refs/col",
+    "clipboard": "./refs/clipboard",
+    "cat": "./refs/cat",
+    "before": "./refs/before",
+    "after": "./refs/after",
+    "exclude": "./refs/exclude",
+    "file": "./refs/file",
+    "upper": "./refs/upper",
+    "uniq": "./refs/uniq",
+    "map": "./refs/map",
+    "lower": "./refs/lower",
+    "log": "./refs/log",
+    "length": "./refs/length",
+    "fs": "./refs/fs",
+    "filter": "./refs/filter",
+    "count": "./refs/count",
+    "drop": "./refs/drop",
+    "mark": "./refs/mark",
+    "max": "./refs/max",
+    "min": "./refs/min",
+    "nixar": "./refs/nixar",
+    "order": "./refs/order",
+    "remove": "./refs/remove",
+    "replace": "./refs/replace",
+    "reverse": "./refs/reverse",
+    "row": "./refs/row",
+    "split": "./refs/split",
+    "substr": "./refs/substr",
+    "sum": "./refs/sum",
+    "table": "./refs/table",
+    "take": "./refs/take"
+  }
 }

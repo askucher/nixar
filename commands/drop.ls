@@ -1,15 +1,15 @@
 module.exports = (repo, p)->
   repo.commands.push do
-    name: "drop"
+    name: \drop
     desc: "Drop lines"
     input: \lines
     output: \lines
     enabled: yes
-    doc: 
-      examples: 
-        * ''
-        ...
     compile: ->
       (mask, lines)->
-          lines |> p.drop mask
+          count = mask.match('[0-9]+')?0 ? 1
+          if mask.index-of('last') > -1 
+             lines |> p.reverse |> p.drop count |> p.reverse
+          else
+            lines |> p.drop count
        

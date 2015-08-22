@@ -2,7 +2,7 @@
 (function(){
   module.exports = function(repo, p, parser){
     return repo.commands.push({
-      name: "col",
+      name: 'col',
       desc: "Get specific columns",
       input: 'lines',
       output: 'lines',
@@ -12,31 +12,37 @@
       },
       compile: function(){
         return function(mask, lines){
-          var items, columns, ref$, pad, maxes, eachItem;
-          items = p.map(function(it){
-            return it.split(/[ ]+/);
-          })(
-          lines);
-          columns = parser.numbers(mask, ((ref$ = items[0]) != null ? ref$.length : void 8) - 1);
+          var pad, state, eachItem, makeColumns;
           pad = function(str, len){
             return ((str === '' ? ' ' : str) + Array(len).join(' ')).slice(0, len);
           };
-          maxes = [];
+          state = {
+            maxes: [],
+            columns: []
+          };
           eachItem = function(s){
             return s.forEach(function(_, i){
               var ref$;
-              return maxes[i] = Math.max(s[i].length, (ref$ = maxes[i]) != null ? ref$ : 0);
+              return state.maxes[i] = Math.max(s[i].length, (ref$ = state.maxes[i]) != null ? ref$ : 0);
             });
+          };
+          makeColumns = function(it){
+            state.columns = parser.numbers(mask, state.maxes.length - 1);
+            return it;
           };
           return p.map(function(it){
             return it.map(function(item, c){
-              return pad(item, maxes[c]);
+              return pad(item, state.maxes[c]);
             }).filter(function(item, i){
-              return columns.indexOf(i) > -1;
+              return state.columns.indexOf(i) > -1;
             }).join(' ');
           })(
+          makeColumns(
           p.each(eachItem)(
-          items));
+          p.map(function(it){
+            return it.split(/[ ]+/);
+          })(
+          lines))));
         };
       }
     });
