@@ -1,10 +1,15 @@
 module.exports = (repo, p)->
   repo.commands.push do
     name: "take"
-    desc: "Get specific count of lines"
+    desc: "Take lines"
     input: \lines
     output: \lines
     enabled: yes
+    doc: 
+      examples: 
+        * ''
+        ...
     compile: ->
       (mask, lines)->
-        lines |> p.take mask
+          lines |> p.take mask
+       

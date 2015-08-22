@@ -1,21 +1,12 @@
-module.exports = (repo)->
+module.exports = (repo, cat)->
   repo.commands.push do
     name: "file"
-    desc: "Print file content"
+    desc: "Print file, file lines, file created, file modified"
     input: \line
     output: \lines
     enabled: yes
-    compile: ->
-      fs = require \fs
-      (mask, input, callback)->
-        path = process.cwd! + \/ + input
-        if fs.exists-sync(path) and fs.lstat-sync(path).is-file!
-           lines = fs.read-file-sync(input).to-string(\utf8).split(/\n/)
-           res = do
-               switch mask 
-                  case "lines"
-                    lines.map(-> "#input: ".yellow + it)
-                  else
-                    lines
-           callback res
-        else ["file '#path' not exists"]
+    doc: 
+      examples: 
+        * ''
+        ...
+    compile: cat.compile

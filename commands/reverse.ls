@@ -5,6 +5,10 @@ module.exports = (repo, p)->
     input: \lines
     output: \lines
     enabled: yes
+    doc: 
+      examples: 
+        * ''
+        ...
     compile: ->
       (mask, lines)->
          lines |> p.reverse

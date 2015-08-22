@@ -1,10 +1,14 @@
 module.exports = (repo, p)->
   repo.commands.push do
     name: "substr"
-    desc: "Substring"
+    desc: "Substring operation"
     input: \line
     output: \line
     enabled: yes
+    doc: 
+      examples: 
+        * ''
+        ...
     compile: ->
       (mask, line)->
         pars = mask.split(',')

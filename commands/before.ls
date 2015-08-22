@@ -1,10 +1,14 @@
 module.exports = (repo)->
   repo.commands.push do
     name: "before"
-    desc: "Print everything before"
+    desc: "Print everything before mask"
     input: \line
     output: \line
     enabled: yes
+    doc: 
+      examples: 
+        * ''
+        ...
     compile: ->
       (mask, input)->
         index = 

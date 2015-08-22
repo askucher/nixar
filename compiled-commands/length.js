@@ -7,11 +7,12 @@
       input: 'line',
       output: 'line',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
-        return {
-          length: function(mask, input){
-            return input.length;
-          }
+        return function(mask, input){
+          return input.length;
         };
       }
     });

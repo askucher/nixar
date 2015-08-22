@@ -3,39 +3,54 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "fs",
-      desc: "Find by mask *.* or **/*.* or */",
+      desc: "Find by mask *.* or **/*.* or */ or all",
       input: 'nothing',
       output: 'lines',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
         var glob;
-        glob = require('glob');
-        return function(mask, callback){
-          var transformMask, transform;
+        glob = require('glob-all');
+        return function(skip, mask, callback){
+          var fs, path, transformMask, transform;
+          fs = require('fs');
+          path = require('path');
           transformMask = (function(){
             switch (false) {
+            case !(mask.indexOf(' ') > -1):
+              return mask.split(' ');
             case mask !== 'all':
-              return '**/*';
-            case mask !== 'all-filenames':
-              return '**/*';
+              return ['**/*'];
             case (mask != null ? mask : '') !== '':
-              return "*";
+              return ["*"];
             default:
-              return mask;
+              return [mask];
             }
           }());
           transform = function(name){
-            switch (false) {
-            case mask !== 'all-filenames':
-              return name.match(/[^/]+$/)[0];
-            default:
-              return name;
-            }
+            var isDir, base, dir, res;
+            isDir = fs.lstatSync(name).isDirectory();
+            base = path.basename(name);
+            dir = function(name){
+              return name.yellow + '/';
+            };
+            res = (function(){
+              switch (false) {
+              case !isDir:
+                return dir(name);
+              default:
+                return name;
+              }
+            }());
+            return res;
           };
-          return glob(transformMask, {}, function(err, files){
-            if (err != null) {
-              return console.log(err.red);
-            } else {
+          return glob(transformMask, {
+            silent: true,
+            strict: false
+          }, function(err, files){
+            if ((files != null ? files.length : void 8) > 0) {
               return callback(
               p.map(transform)(
               files));

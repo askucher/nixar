@@ -5,6 +5,12 @@ module.exports = (repo)->
     input: \line 
     output: \line
     enabled: yes
+    doc: 
+      examples: 
+        * ''
+        ...
     compile: ->
       (mask, input)->
-         String(input).replace(/^\s+|\s+$/g, '')
+         mask = if (mask ? "") is "" then "\\s+" else mask
+         re = new RegExp("^#{mask}|#{mask}$","g")
+         String(input).replace(re, '')

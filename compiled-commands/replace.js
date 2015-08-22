@@ -5,8 +5,11 @@
       name: "replace",
       desc: "Replace substring in line",
       input: 'line',
-      output: 'lines',
+      output: 'line',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
         return function(mask, input){
           var keys;

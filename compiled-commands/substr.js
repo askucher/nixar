@@ -3,10 +3,13 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "substr",
-      desc: "Substring",
+      desc: "Substring operation",
       input: 'line',
       output: 'line',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
         return function(mask, line){
           var pars;

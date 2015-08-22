@@ -5,6 +5,10 @@ module.exports = (repo)->
     input: \line
     output: \line
     enabled: yes
+    doc: 
+      examples: 
+        * ''
+        ...
     compile: ->
       (mask, input)->
-        input.to-upper-case!
+        (input ? "").to-upper-case!

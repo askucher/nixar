@@ -1,10 +1,15 @@
-module.exports = (repo)->
+module.exports = (repo, p)->
   repo.commands.push do
     name: "split"
-    desc: "Calculate minimum integer"
+    desc: "Split line into lines"
     input: \line
     output: \lines
     enabled: yes
+    doc: 
+      examples: 
+        * ''
+        ...
     compile: ->
-      (mask, input, callback)->
-         input.split(mask) |> callback
+      (mask, line, callback)->
+        callback line.split(mask)
+       

@@ -7,6 +7,9 @@
       input: 'line',
       output: 'line',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
         return function(mask, input){
           if ((mask != null ? mask : "") === "") {

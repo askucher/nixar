@@ -5,6 +5,10 @@ module.exports = (repo)->
     input: \line 
     output: \line
     enabled: yes
+    doc: 
+      examples: 
+        * ''
+        ...
     compile: ->
-      length: (mask, input)->
+      (mask, input)->
          input.length

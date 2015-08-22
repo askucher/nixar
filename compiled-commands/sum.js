@@ -3,14 +3,17 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "sum",
-      desc: "Calculate sum of integers",
+      desc: "Calc sum",
       input: 'lines',
       output: 'line',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
-        return function(mask, lines){
+        return function(mask, input){
           return p.sum(
-          lines);
+          input);
         };
       }
     });

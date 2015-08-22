@@ -3,8 +3,12 @@ module.exports = (repo)->
     name: "replace"
     desc: "Replace substring in line"
     input: \line
-    output: \lines
+    output: \line
     enabled: yes
+    doc: 
+      examples: 
+        * ''
+        ...
     compile: ->
       (mask, input)->
         keys = mask.split(\,)

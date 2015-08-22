@@ -7,9 +7,12 @@
       input: 'line',
       output: 'line',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
         return function(mask, input){
-          return input.toLoweCase();
+          return (input != null ? input : "").toLowerCase();
         };
       }
     });

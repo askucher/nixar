@@ -3,10 +3,13 @@
   module.exports = function(repo){
     return repo.commands.push({
       name: "exclude",
-      desc: "Filter lines",
+      desc: "Exclude line by founded mask",
       input: 'line',
       output: 'line',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
         return function(mask, input){
           if ((mask != null ? mask : "") === "") {

@@ -3,10 +3,13 @@
   module.exports = function(repo){
     return repo.commands.push({
       name: "before",
-      desc: "Print everything before",
+      desc: "Print everything before mask",
       input: 'line',
       output: 'line',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
         return function(mask, input){
           var index;

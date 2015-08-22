@@ -7,6 +7,9 @@
       input: 'lines',
       output: 'line',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
         return function(mask, lines){
           return function(it){

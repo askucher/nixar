@@ -5,6 +5,10 @@ module.exports = (repo)->
     input: \line
     output: \line
     enabled: yes
+    doc: 
+      examples: 
+        * ''
+        ...
     compile: ->
       (mask, input)->
         if (mask ? "") is ""

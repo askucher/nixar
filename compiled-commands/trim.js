@@ -7,9 +7,15 @@
       input: 'line',
       output: 'line',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
         return function(mask, input){
-          return String(input).replace(/^\s+|\s+$/g, '');
+          var re;
+          mask = (mask != null ? mask : "") === "" ? "\\s+" : mask;
+          re = new RegExp("^" + mask + "|" + mask + "$", "g");
+          return String(input).replace(re, '');
         };
       }
     });

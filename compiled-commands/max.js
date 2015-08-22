@@ -3,14 +3,17 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "max",
-      desc: "Calculate maximum integer",
+      desc: "Calc maximum number",
       input: 'lines',
       output: 'line',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
-        return function(mask, lines){
+        return function(mask, input){
           return p.maximum(
-          lines);
+          input);
         };
       }
     });

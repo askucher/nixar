@@ -1,10 +1,14 @@
 module.exports = (repo)->
   repo.commands.push do
     name: "exclude"
-    desc: "Filter lines"
+    desc: "Exclude line by founded mask"
     input: \line
     output: \line
     enabled: yes
+    doc: 
+      examples: 
+        * ''
+        ...
     compile: ->
       (mask, input)->
         if (mask ? "") is ""

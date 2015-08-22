@@ -1,10 +1,15 @@
-module.exports = (repo)->
+module.exports = (repo, p)->
   repo.commands.push do
     name: "concat"
-    desc: "Concatenate lines into single line"
+    desc: "Join lines into one line"
     input: \lines
     output: \line
     enabled: yes
+    doc: 
+      examples: 
+        * ''
+        ...
     compile: ->
       (mask, lines)->
-         lines.join(mask)
+          lines |> p.join mask
+       

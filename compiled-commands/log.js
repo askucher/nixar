@@ -7,6 +7,9 @@
       input: 'line',
       output: 'line',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
         var fs;
         fs = require('fs');

@@ -3,10 +3,13 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "take",
-      desc: "Get specific count of lines",
+      desc: "Take lines",
       input: 'lines',
       output: 'lines',
       enabled: true,
+      doc: {
+        examples: ['']
+      },
       compile: function(){
         return function(mask, lines){
           return p.take(mask)(
