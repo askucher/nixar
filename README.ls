@@ -9,14 +9,14 @@ require \xonom
       lines = []
       $ = lines~push
       $ '# New shell commands'
-      $ '###Joyable equivalents for existent linux commands'
+      $ 'Joyable equivalents for existent linux commands'
       $ ''
       $ 'npm install -g nixar'
       $ ''
-      $ '##Commands'
+      $ '###Commands'
       $ ''
       repo.commands.for-each (cmd)->
-          $ "## #{cmd.name}"
-          $ "### #{cmd.desc}"
+          $ "#### #{cmd.name}"
+          $ "#{cmd.desc}"
       console.log lines.join('\n')
       require('fs').writeFileSync('README.md', lines.join(\\n), \utf8)
