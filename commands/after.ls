@@ -13,7 +13,6 @@ module.exports = (repo)->
       (mask, input)->
         last = mask.index-of(\last) is 0
         mask = mask.replace(/^last /,"")
-        console.log mask, last
         index = 
           (if last then index.last-index-of else input.index-of)(mask)
         if index > -1
