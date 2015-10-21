@@ -12,8 +12,13 @@
       },
       compile: function(){
         return function(mask, input){
-          var index;
-          index = input.indexOf(mask);
+          var last, index;
+          last = mask.indexOf('last') === 0;
+          mask = mask.replace(/^last /, "");
+          console.log(mask, last);
+          index = (last
+            ? index.lastIndexOf
+            : input.indexOf)(mask);
           if (index > -1) {
             return input.substr(index + mask.length);
           } else {
