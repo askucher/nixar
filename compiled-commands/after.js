@@ -14,6 +14,7 @@
         return function(mask, input){
           var last, str, index;
           last = mask.indexOf('last') === 0;
+          console.log(mask);
           str = mask.replace(/^last /, "");
           index = (last
             ? input.lastIndexOf

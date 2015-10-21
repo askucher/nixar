@@ -1,14 +1,59 @@
 {
-  "subversion": 2015,
-  "homepage": "https://github.com/gruntjs/",
-  "author": {
-    "name": "xm",
-    "url": ""
+  "scripts": {
+    "test": "grunt test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:askucher/prelude.git"
+  "engines": {
+    "node": ">= 0.8.0"
   },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/askucher/grunt-xonom/blob/master/LICENSE-MIT"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/askucher/grunt-xonom/issues"
+  },
+  "directories": {},
+  "maintainers": [],
+  "_npmUser": {
+    "name": "askucher",
+    "email": "a.stegno@gmail.com"
+  },
+  "_npmVersion": "0.1.00",
+  "subversion": 2016,
+  "uperversion": "0.1",
+  "version": "0.1.2016",
+  "description": "map, filter and other functions for unix bash",
+  "name": "nixar",
+  "files": [
+    "nixar.js",
+    "compiled-commands",
+    "refs",
+    "docs"
+  ],
+  "_id": "prelude@0.6.0",
+  "dist": {},
+  "_from": "prelude@>0.1",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "easy-table": "^1.0.0",
+    "highlight": "^0.2.3",
+    "glob-all": "^3.0.1",
+    "glob": "^5.0.14",
+    "event-stream": "^3.3.1",
+    "html-to-json": "^0.5.1",
+    "moment": "^2.10.6",
+    "readline": "0.0.8",
+    "prelude-ls": "^1.1.2",
+    "picture-tube": "^1.0.0",
+    "node-syntaxhighlighter": "^0.8.1",
+    "xonom": "^0.1.74",
+    "yargs": "^3.21.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "keywords": [],
   "bin": {
     "turn": "./refs/turn",
     "trim": "./refs/trim",
@@ -45,58 +90,13 @@
     "table": "./refs/table",
     "take": "./refs/take"
   },
-  "keywords": [],
-  "peerDependencies": {},
-  "devDependencies": {},
-  "_npmVersion": "0.1.00",
-  "_npmUser": {
-    "name": "askucher",
-    "email": "a.stegno@gmail.com"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:askucher/prelude.git"
   },
-  "maintainers": [],
-  "directories": {},
-  "bugs": {
-    "url": "https://github.com/askucher/grunt-xonom/issues"
+  "author": {
+    "name": "xm",
+    "url": ""
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/askucher/grunt-xonom/blob/master/LICENSE-MIT"
-    }
-  ],
-  "engines": {
-    "node": ">= 0.8.0"
-  },
-  "scripts": {
-    "test": "grunt test"
-  },
-  "dependencies": {
-    "xonom": "^0.1.74",
-    "yargs": "^3.21.0",
-    "event-stream": "^3.3.1",
-    "glob": "^5.0.14",
-    "glob-all": "^3.0.1",
-    "highlight": "^0.2.3",
-    "easy-table": "^1.0.0",
-    "colors": "^1.1.2",
-    "node-syntaxhighlighter": "^0.8.1",
-    "picture-tube": "^1.0.0",
-    "prelude-ls": "^1.1.2",
-    "readline": "0.0.8",
-    "moment": "^2.10.6",
-    "html-to-json": "^0.5.1"
-  },
-  "uperversion": "0.1",
-  "version": "0.1.2015",
-  "description": "map, filter and other functions for unix bash",
-  "name": "nixar",
-  "files": [
-    "nixar.js",
-    "compiled-commands",
-    "refs",
-    "docs"
-  ],
-  "_id": "prelude@0.6.0",
-  "dist": {},
-  "_from": "prelude@>0.1"
+  "homepage": "https://github.com/gruntjs/"
 }
