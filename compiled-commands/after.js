@@ -16,7 +16,7 @@
           last = mask.indexOf('last') === 0;
           str = mask.replace(/^last /, "");
           index = (last
-            ? index.lastIndexOf
+            ? input.lastIndexOf
             : input.indexOf)(str);
           if (index > -1) {
             return input.substr(index + str.length);

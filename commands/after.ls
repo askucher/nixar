@@ -14,7 +14,7 @@ module.exports = (repo)->
         last = mask.index-of(\last) is 0
         str = mask.replace(/^last /,"")
         index = 
-          (if last then index.last-index-of else input.index-of)(str)
+          (if last then input.last-index-of else input.index-of)(str)
         if index > -1
           input.substr(index + str.length)
         else 

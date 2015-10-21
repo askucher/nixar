@@ -1,20 +1,14 @@
 {
-  "_npmVersion": "0.1.00",
-  "_from": "prelude@>0.1",
-  "dist": {},
-  "_id": "prelude@0.6.0",
-  "files": [
-    "nixar.js",
-    "compiled-commands",
-    "refs",
-    "docs"
-  ],
-  "name": "nixar",
-  "description": "map, filter and other functions for unix bash",
-  "version": "0.1.2014",
-  "devDependencies": {},
-  "peerDependencies": {},
-  "keywords": [],
+  "subversion": 2015,
+  "homepage": "https://github.com/gruntjs/",
+  "author": {
+    "name": "xm",
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:askucher/prelude.git"
+  },
   "bin": {
     "turn": "./refs/turn",
     "trim": "./refs/trim",
@@ -51,17 +45,10 @@
     "table": "./refs/table",
     "take": "./refs/take"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:askucher/prelude.git"
-  },
-  "author": {
-    "name": "xm",
-    "url": ""
-  },
-  "homepage": "https://github.com/gruntjs/",
-  "subversion": 2014,
-  "uperversion": "0.1",
+  "keywords": [],
+  "peerDependencies": {},
+  "devDependencies": {},
+  "_npmVersion": "0.1.00",
   "_npmUser": {
     "name": "askucher",
     "email": "a.stegno@gmail.com"
@@ -84,19 +71,32 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "moment": "^2.10.6",
-    "html-to-json": "^0.5.1",
-    "highlight": "^0.2.3",
-    "glob-all": "^3.0.1",
-    "glob": "^5.0.14",
-    "event-stream": "^3.3.1",
-    "yargs": "^3.21.0",
     "xonom": "^0.1.74",
-    "readline": "0.0.8",
-    "prelude-ls": "^1.1.2",
-    "picture-tube": "^1.0.0",
-    "node-syntaxhighlighter": "^0.8.1",
+    "yargs": "^3.21.0",
+    "event-stream": "^3.3.1",
+    "glob": "^5.0.14",
+    "glob-all": "^3.0.1",
+    "highlight": "^0.2.3",
+    "easy-table": "^1.0.0",
     "colors": "^1.1.2",
-    "easy-table": "^1.0.0"
-  }
+    "node-syntaxhighlighter": "^0.8.1",
+    "picture-tube": "^1.0.0",
+    "prelude-ls": "^1.1.2",
+    "readline": "0.0.8",
+    "moment": "^2.10.6",
+    "html-to-json": "^0.5.1"
+  },
+  "uperversion": "0.1",
+  "version": "0.1.2015",
+  "description": "map, filter and other functions for unix bash",
+  "name": "nixar",
+  "files": [
+    "nixar.js",
+    "compiled-commands",
+    "refs",
+    "docs"
+  ],
+  "_id": "prelude@0.6.0",
+  "dist": {},
+  "_from": "prelude@>0.1"
 }
