@@ -14,11 +14,10 @@
         return function(mask, input){
           var last, str, index;
           last = mask.indexOf('last') === 0;
-          console.log(mask);
-          str = mask.replace(/^last /, "");
-          index = (last
-            ? input.lastIndexOf
-            : input.indexOf)(str);
+          str = mask.replace(/^last /g, "");
+          index = last
+            ? input.lastIndexOf(str)
+            : input.indexOf(str);
           if (index > -1) {
             return input.substr(index + str.length);
           } else {
