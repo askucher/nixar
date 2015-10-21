@@ -12,10 +12,10 @@ module.exports = (repo)->
     compile: ->
       (mask, input)->
         last = mask.index-of(\last) is 0
-        mask = mask.replace(/^last /,"")
+        str = mask.replace(/^last /,"")
         index = 
-          (if last then index.last-index-of else input.index-of)(mask)
+          (if last then index.last-index-of else input.index-of)(str)
         if index > -1
-          input.substr(index + mask.length)
+          input.substr(index + str.length)
         else 
           input

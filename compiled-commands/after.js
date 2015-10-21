@@ -12,14 +12,14 @@
       },
       compile: function(){
         return function(mask, input){
-          var last, index;
+          var last, str, index;
           last = mask.indexOf('last') === 0;
-          mask = mask.replace(/^last /, "");
+          str = mask.replace(/^last /, "");
           index = (last
             ? index.lastIndexOf
-            : input.indexOf)(mask);
+            : input.indexOf)(str);
           if (index > -1) {
-            return input.substr(index + mask.length);
+            return input.substr(index + str.length);
           } else {
             return input;
           }
