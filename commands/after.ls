@@ -12,7 +12,7 @@ module.exports = (repo)->
     compile: ->
       (mask, input)->
         last = mask.index-of(\last) is 0
-        mask = mask.replace(/^last /,"")
+        mask = mask.replace("last","").trim!
         index = 
           (if last then index.last-index-of else input.index-of)(mask)
         if index > -1
