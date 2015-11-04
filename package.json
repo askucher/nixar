@@ -1,39 +1,12 @@
 {
-  "dist": {},
-  "_id": "prelude@0.6.0",
-  "files": [
-    "nixar.js",
-    "compiled-commands",
-    "refs",
-    "docs"
-  ],
-  "name": "nixar",
-  "description": "map, filter and other functions for unix bash",
-  "version": "0.1.2017",
-  "uperversion": "0.1",
-  "subversion": 2017,
-  "scripts": {
-    "test": "grunt test"
+  "author": {
+    "name": "xm",
+    "url": ""
   },
-  "dependencies": {
-    "moment": "^2.10.6",
-    "html-to-json": "^0.5.1",
-    "event-stream": "^3.3.1",
-    "glob": "^5.0.14",
-    "glob-all": "^3.0.1",
-    "highlight": "^0.2.3",
-    "yargs": "^3.21.0",
-    "xonom": "^0.1.74",
-    "node-syntaxhighlighter": "^0.8.1",
-    "picture-tube": "^1.0.0",
-    "prelude-ls": "^1.1.2",
-    "readline": "0.0.8",
-    "colors": "^1.1.2",
-    "easy-table": "^1.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:askucher/prelude.git"
   },
-  "devDependencies": {},
-  "peerDependencies": {},
-  "keywords": [],
   "bin": {
     "turn": "./refs/turn",
     "trim": "./refs/trim",
@@ -70,15 +43,29 @@
     "table": "./refs/table",
     "take": "./refs/take"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:askucher/prelude.git"
+  "keywords": [],
+  "peerDependencies": {},
+  "devDependencies": {},
+  "dependencies": {
+    "xonom": "^0.1.74",
+    "yargs": "^3.21.0",
+    "highlight": "^0.2.3",
+    "glob-all": "^3.0.1",
+    "glob": "^5.0.14",
+    "event-stream": "^3.3.1",
+    "easy-table": "^1.0.0",
+    "colors": "^1.1.2",
+    "readline": "0.0.8",
+    "prelude-ls": "^1.1.2",
+    "picture-tube": "^1.0.0",
+    "node-syntaxhighlighter": "^0.8.1",
+    "moment": "^2.10.6",
+    "html-to-json": "^0.5.1"
   },
-  "author": {
-    "name": "xm",
-    "url": ""
+  "scripts": {
+    "test": "grunt test"
   },
-  "homepage": "https://github.com/gruntjs/",
+  "dist": {},
   "_from": "prelude@>0.1",
   "_npmVersion": "0.1.00",
   "_npmUser": {
@@ -98,5 +85,18 @@
   ],
   "engines": {
     "node": ">= 0.8.0"
-  }
+  },
+  "homepage": "https://github.com/gruntjs/",
+  "subversion": 2018,
+  "uperversion": "0.1",
+  "version": "0.1.2018",
+  "description": "map, filter and other functions for unix bash",
+  "name": "nixar",
+  "files": [
+    "nixar.js",
+    "compiled-commands",
+    "refs",
+    "docs"
+  ],
+  "_id": "prelude@0.6.0"
 }
