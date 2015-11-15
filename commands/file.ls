@@ -6,7 +6,7 @@ module.exports = (repo, cat)->
     output: \lines
     enabled: yes
     doc: 
-      examples: 
+      examples:
         * ''
         ...
     compile: cat.compile

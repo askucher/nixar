@@ -1,6 +1,6 @@
 module.exports = (repo, cat)->
   repo.commands.push do
-    name: "cat"
+    name: "show"
     desc: "Print file, file lines, file created, file modified"
     input: \nothing
     output: \lines
