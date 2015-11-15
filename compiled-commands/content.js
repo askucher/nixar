@@ -2,7 +2,7 @@
 (function(){
   module.exports = function(repo, cat){
     return repo.commands.push({
-      name: "file",
+      name: "content",
       desc: "Print file, file lines, file created, file modified",
       input: 'line',
       output: 'lines',
