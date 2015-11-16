@@ -1,7 +1,13 @@
 # New shell commands
 Joyable equivalents for existent linux commands
 
-npm install -g nixar
+![Nixar](http://content.screencast.com/users/a.stegno/folders/Jing/media/cf29f8c0-b343-4692-9e05-1ff44f37f48d/00000255.png)
+
+
+###Install
+npm i -g nixar
+
+
 
 ###Commands
 
