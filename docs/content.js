@@ -1,0 +1,14 @@
+module.exports = function(repo) {
+  repo.docs.push({
+    "name": "content",
+    "files": [
+      "<p>Command\n<code>sh\n $ find * -type f -name \"filename*\" -print | cat filename.txt \n</code></p>",
+      "<h3>Find the file whose name is contained in the filename and display its contents</h3>\n\n<p>Input\n<code>sh\n├── folder1\n│   ├── folder1\n│   │   ├── file.csv\n│   │   ├── file.txt\n│   │   ├── file2.csv\n│   │   └── file2.txt\n│   └── folder2\n│       ├── file.csv\n│       └── file1.txt\n├── filename.txt\n├── rootfile.txt\n└── rootfile2.txt\n</code></p>\n\n<p>Command\n<code>sh\n $ fs all | filter filename | file <br />\n</code></p>\n\n<p>Output\n<code>sh\nline 1\nline 2\nline 3\nline 4\nline 5\n</code></p>",
+      "<p>Command\n<code>sh\n $ du -h filename\n</code></p>",
+      "<h3>Recursively search for files and display their size</h3>\n\n<p>Input\n<code>sh\n├── folder1\n│   ├── folder1\n│   │   ├── file.csv\n│   │   ├── file.txt\n│   │   ├── file2.csv\n│   │   └── file2.txt\n│   └── folder2\n│       ├── file.csv\n│       └── file1.txt\n├── filename.txt\n├── rootfile.txt\n└── rootfile2.txt\n</code></p>\n\n<p>Command\n<code>sh\n $ fs all | file size \n</code></p>\n\n<p>Output\n<code>sh\nfilename.txt 35 b / 0 kb / 0 mb / 0 gb\nfolder1/folder1/file.csv 649 b / 1 kb / 0 mb / 0 gb\nfolder1/folder1/file.txt 620 b / 1 kb / 0 mb / 0 gb\nfolder1/folder1/file2.csv 597 b / 1 kb / 0 mb / 0 gb\nfolder1/folder1/file2.txt 575 b / 1 kb / 0 mb / 0 gb\nfolder1/folder2/file.csv 550 b / 1 kb / 0 mb / 0 gb\nfolder1/folder2/file1.txt 342 b / 0 kb / 0 mb / 0 gb\nrootfile.txt 0 b / 0 kb / 0 mb / 0 gb\nrootfile2.txt 24 b / 0 kb / 0 mb / 0 gb\n</code></p>",
+      "<h3>Search for a file by date</h3>\n\n<p>Input\n<code>sh\n├── folder1\n│   ├── folder1\n│   │   ├── file.csv\n│   │   ├── file.txt\n│   │   ├── file2.csv\n│   │   └── file2.txt\n│   └── folder2\n│       ├── file.csv\n│       └── file1.txt\n├── filename.txt\n├── rootfile.txt\n└── rootfile2.txt\n</code></p>\n\n<p>Command\n<code>sh\n $ fs all | file created | filter Aug 11\n</code></p>\n\n<p>Output\n<code>sh\nfilename.txt 61306 seconds ago Mon Aug 17 2015 15:13:32 GMT+0000 (UTC)\nrootfile2.txt 80710 seconds ago Mon Aug 17 2015 09:50:08 GMT+0000 (UTC)\n</code></p>",
+      "<p>Command\n<code>sh\n $ find -mtime -5 -print\n</code></p>",
+      "<h3>Search for a file modification time</h3>\n\n<p>Input\n<code>sh\n├── folder1\n│   ├── folder1\n│   │   ├── file.csv\n│   │   ├── file.txt\n│   │   ├── file2.csv\n│   │   └── file2.txt\n│   └── folder2\n│       ├── file.csv\n│       └── file1.txt\n├── filename.txt\n├── rootfile.txt\n└── rootfile2.txt\n</code></p>\n\n<p>Command\n<code>sh\n $ fs all | file modified | filter 23:01:09\n</code></p>\n\n<p>Output\n<code>sh\nrootfile2.txt 222347 seconds ago Sat Aug 08 2015 23:01:09 GMT+0000 (UTC)\n</code></p>"
+    ]
+  });
+}
