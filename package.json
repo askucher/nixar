@@ -1,55 +1,21 @@
 {
-  "peerDependencies": {},
-  "devDependencies": {},
-  "dependencies": {
-    "xonom": "^0.1.74",
-    "yargs": "^3.21.0",
-    "highlight": "^0.2.3",
-    "glob-all": "^3.0.1",
-    "glob": "^5.0.14",
-    "event-stream": "^3.3.1",
-    "easy-table": "^1.0.0",
-    "colors": "^1.1.2",
-    "readline": "0.0.8",
-    "prelude-ls": "^1.1.2",
-    "picture-tube": "^1.0.0",
-    "node-syntaxhighlighter": "^0.8.1",
-    "moment": "^2.10.6",
-    "html-to-json": "^0.5.1"
+  "_npmUser": {
+    "name": "askucher",
+    "email": "a.stegno@gmail.com"
   },
-  "scripts": {
-    "test": "grunt test"
-  },
-  "engines": {
-    "node": ">= 0.8.0"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/askucher/grunt-xonom/blob/master/LICENSE-MIT"
-    }
-  ],
-  "bugs": {
-    "url": "https://github.com/askucher/grunt-xonom/issues"
-  },
-  "directories": {},
-  "description": "map, filter and other functions for unix bash",
-  "name": "nixar",
+  "_npmVersion": "0.1.00",
+  "_from": "prelude@>0.1",
+  "dist": {},
+  "_id": "prelude@0.6.0",
   "files": [
     "nixar.js",
     "compiled-commands",
     "refs",
     "docs"
   ],
-  "_id": "prelude@0.6.0",
-  "dist": {},
-  "_from": "prelude@>0.1",
-  "_npmVersion": "0.1.00",
-  "_npmUser": {
-    "name": "askucher",
-    "email": "a.stegno@gmail.com"
-  },
-  "maintainers": [],
+  "name": "nixar",
+  "description": "map, filter and other functions for unix bash",
+  "peerDependencies": {},
   "keywords": [],
   "bin": {
     "unique": "./refs/unique",
@@ -95,7 +61,41 @@
     "url": ""
   },
   "homepage": "https://github.com/gruntjs/",
-  "subversion": 2024,
+  "subversion": 2025,
   "uperversion": "0.1",
-  "version": "0.1.2024"
+  "version": "0.1.2025",
+  "maintainers": [],
+  "directories": {},
+  "bugs": {
+    "url": "https://github.com/askucher/grunt-xonom/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/askucher/grunt-xonom/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "easy-table": "^1.0.0",
+    "event-stream": "^3.3.1",
+    "glob": "^5.0.14",
+    "glob-all": "^3.0.1",
+    "highlight": "^0.2.3",
+    "html-to-json": "^0.5.1",
+    "moment": "^2.10.6",
+    "node-syntaxhighlighter": "^0.8.1",
+    "picture-tube": "^1.0.0",
+    "prelude-ls": "^1.1.2",
+    "readline": "0.0.8",
+    "xonom": "^0.1.74",
+    "yargs": "^3.21.0"
+  },
+  "devDependencies": {}
 }
