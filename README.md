@@ -1,75 +1,75 @@
 # New shell commands
 Joyable equivalents for existent linux commands
 
+![Nixar](http://content.screencast.com/users/a.stegno/folders/Jing/media/cf29f8c0-b343-4692-9e05-1ff44f37f48d/00000255.png)
+
 npm install -g nixar
 
 ###Commands
 
 #### after
-Print everything after mask
+Prints everything after [mask]. Has option 'after last [mask]'
 #### before
-Print everything before mask
-#### cat
-Print file, file lines, file created, file modified
-#### clipboard
-Copy/Paste data into clipboard
-#### col
-Get specific columns
+Prints everything before mask
+#### cols
+Get specific columns. Example: cals 1-3 5 6 9-20
 #### concat
-Join lines into one line
+Joins lines into one line
+#### content
+Prints content, content lines, content created date, content modified date, content size
 #### count
-Calculate count of lines
+Calculates lines count
 #### drop
-Drop lines
+Drops lines
 #### exclude
-Exclude line by founded mask
-#### file
-Print file, file lines, file created, file modified
+Excludes line specified by mask
 #### filter
 Filter lines
 #### fs
-Find by mask *.* or **/*.* or */ or all
+Finds file(s) by glob-like mask (*.* or **/*.* or */ or all)
 #### length
-Calculate count of charecters
+Calculates characters count
 #### log
-Log output into file and continue printing
+Logs output to file and continues printing
 #### lower
-make lowercase
+Converts characters to lowercase
 #### map
-Transform line
+Transforms line
 #### mark
-Highlight the mask into lines
+Highlights lines' parts according to the provided mask
 #### max
-Calc maximum number
+Calculates maximum number from list of numbers
 #### min
-Calc maximum number
+Calculates minimum number from list of numbers
 #### nixar
-Show all commands
+Shows all commands
 #### order
-Sort lines
+Sorts lines
 #### remove
-Remove substring in line
+Removes substring in line
 #### replace
-Replace substring in line
+Replaces substring in line
 #### reverse
-Reverse the order of output
-#### row
-Get specific row
+Reverses the order of output
+#### rows
+Gets specific rows
+#### show
+Prints file, file lines, file created date, file modified date
 #### split
-Split line into lines
+Splits line into lines
 #### substr
-Substring operation
+Returns the part of string specified by start and length parameters
 #### sum
-Calc sum
+Calc sum of numbers in list
 #### table
 Create columns from line based on separator
 #### take
-Take lines
+Select lines
 #### trim
-Remove spaces from start and end of line
+Remove spaces from start and end of line. But if you profide the substring it will remove it from start and end of line
 #### turn
-Calculate minimum integer
-#### uniq
+Rotate the table. Convert rows to cols and cols to rows. This command can replace concat and split commands
+#### unique
 Get unique records
 #### upper
-MAKE UPPERCASE
+Convert characters to uppercase

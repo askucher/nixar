@@ -3,7 +3,7 @@
   module.exports = function(repo){
     return repo.commands.push({
       name: "length",
-      desc: "Calculate count of charecters",
+      desc: "Calculates characters count",
       input: 'line',
       output: 'line',
       enabled: true,

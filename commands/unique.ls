@@ -1,6 +1,6 @@
 module.exports = (repo, p)->
   repo.commands.push do
-    name: "uniq"
+    name: "unique"
     desc: "Get unique records"
     input: \lines
     output: \lines

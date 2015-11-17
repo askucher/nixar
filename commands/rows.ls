@@ -1,7 +1,7 @@
 module.exports = (repo, p, parser)->
   repo.commands.push do
-    name: "row"
-    desc: "Get specific row"
+    name: \rows
+    desc: "Gets specific rows"
     input: \lines
     output: \lines
     enabled: yes

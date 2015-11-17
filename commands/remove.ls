@@ -1,7 +1,7 @@
 module.exports = (repo)->
   repo.commands.push do
     name: "remove"
-    desc: "Remove substring in line"
+    desc: "Removes substring in line"
     input: \line
     output: \line
     enabled: yes

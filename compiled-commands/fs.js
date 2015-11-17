@@ -3,7 +3,7 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "fs",
-      desc: "Find by mask *.* or **/*.* or */ or all",
+      desc: "Finds file(s) by glob-like mask (*.* or **/*.* or */ or all)",
       input: 'nothing',
       output: 'lines',
       enabled: true,

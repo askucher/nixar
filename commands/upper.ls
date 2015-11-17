@@ -1,7 +1,7 @@
 module.exports = (repo)->
   repo.commands.push do
     name: "upper"
-    desc: "MAKE UPPERCASE"
+    desc: "Convert characters to uppercase"
     input: \line
     output: \line
     enabled: yes

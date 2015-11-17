@@ -3,7 +3,7 @@
   module.exports = function(repo, cat){
     return repo.commands.push({
       name: "show",
-      desc: "Print file, file lines, file created, file modified",
+      desc: "Prints file, file lines, file created date, file modified date",
       input: 'nothing',
       output: 'lines',
       enabled: true,

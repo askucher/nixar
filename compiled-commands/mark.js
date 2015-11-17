@@ -3,7 +3,7 @@
   module.exports = function(repo){
     return repo.commands.push({
       name: "mark",
-      desc: "Highlight the mask into lines",
+      desc: "Highlights lines' parts according to the provided mask",
       input: 'line',
       output: 'line',
       enabled: true,

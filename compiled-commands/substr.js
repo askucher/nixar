@@ -3,7 +3,7 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "substr",
-      desc: "Substring operation",
+      desc: "Returns the part of string specified by start and length parameters",
       input: 'line',
       output: 'line',
       enabled: true,

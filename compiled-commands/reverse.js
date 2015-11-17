@@ -3,7 +3,7 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "reverse",
-      desc: "Reverse the order of output",
+      desc: "Reverses the order of output",
       input: 'lines',
       output: 'lines',
       enabled: true,

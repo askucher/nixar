@@ -1,7 +1,7 @@
 module.exports = (repo, p)->
   repo.commands.push do
     name: "fs"
-    desc: "Find by mask *.* or **/*.* or */ or all"
+    desc: "Finds file(s) by glob-like mask (*.* or **/*.* or */ or all)"
     input: \nothing
     output: \lines
     enabled: yes

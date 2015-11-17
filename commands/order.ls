@@ -1,7 +1,7 @@
 module.exports = (repo, p)->
   repo.commands.push do
     name: "order"
-    desc: "Sort lines"
+    desc: "Sorts lines"
     input: \lines
     output: \lines
     enabled: yes

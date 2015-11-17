@@ -1,7 +1,7 @@
 module.exports = (repo)->
   repo.commands.push do
     name: "map"
-    desc: "Transform line"
+    desc: "Transforms line"
     input: \line
     output: \line
     enabled: yes

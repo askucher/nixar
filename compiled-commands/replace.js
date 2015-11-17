@@ -3,7 +3,7 @@
   module.exports = function(repo){
     return repo.commands.push({
       name: "replace",
-      desc: "Replace substring in line",
+      desc: "Replaces substring in line",
       input: 'line',
       output: 'line',
       enabled: true,

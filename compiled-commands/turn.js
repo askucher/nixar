@@ -3,7 +3,7 @@
   module.exports = function(repo){
     return repo.commands.push({
       name: 'turn',
-      desc: "Calculate minimum integer",
+      desc: "Rotate the table. Convert rows to cols and cols to rows. This command can replace concat and split commands",
       input: 'lines',
       output: 'line',
       enabled: true,

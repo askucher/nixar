@@ -3,7 +3,7 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "take",
-      desc: "Take lines",
+      desc: "Select lines",
       input: 'lines',
       output: 'lines',
       enabled: true,

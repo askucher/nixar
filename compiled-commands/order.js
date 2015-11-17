@@ -3,7 +3,7 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "order",
-      desc: "Sort lines",
+      desc: "Sorts lines",
       input: 'lines',
       output: 'lines',
       enabled: true,

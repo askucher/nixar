@@ -1,7 +1,7 @@
 module.exports = (repo, p)->
   repo.commands.push do
     name: \drop
-    desc: "Drop lines"
+    desc: "Drops lines"
     input: \lines
     output: \lines
     enabled: yes

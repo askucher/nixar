@@ -1,7 +1,7 @@
 module.exports = (repo, p)->
   repo.commands.push do
     name: "max"
-    desc: "Calc maximum number"
+    desc: "Calculates maximum number from list of numbers"
     input: \lines
     output: \line
     enabled: yes

@@ -1,7 +1,7 @@
 module.exports = (repo, p)->
   repo.commands.push do
     name: "substr"
-    desc: "Substring operation"
+    desc: "Returns the part of string specified by start and length parameters"
     input: \line
     output: \line
     enabled: yes

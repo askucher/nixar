@@ -3,7 +3,7 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "split",
-      desc: "Split line into lines",
+      desc: "Splits line into lines",
       input: 'line',
       output: 'lines',
       enabled: true,

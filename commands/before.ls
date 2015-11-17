@@ -1,7 +1,7 @@
 module.exports = (repo)->
   repo.commands.push do
     name: "before"
-    desc: "Print everything before mask"
+    desc: "Prints everything before mask"
     input: \line
     output: \line
     enabled: yes

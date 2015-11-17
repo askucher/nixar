@@ -1,7 +1,7 @@
 module.exports = (repo, p)->
   repo.commands.push do
     name: "nixar"
-    desc: "Show all commands"
+    desc: "Shows all commands"
     input: \nothing
     output: \lines
     enabled: yes

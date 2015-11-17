@@ -3,7 +3,7 @@
   module.exports = function(repo){
     return repo.commands.push({
       name: "lower",
-      desc: "make lowercase",
+      desc: "Converts characters to lowercase",
       input: 'line',
       output: 'line',
       enabled: true,

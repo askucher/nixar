@@ -1,7 +1,7 @@
 module.exports = (repo, p)->
   repo.commands.push do
     name: "split"
-    desc: "Split line into lines"
+    desc: "Splits line into lines"
     input: \line
     output: \lines
     enabled: yes

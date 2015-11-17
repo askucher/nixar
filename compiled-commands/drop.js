@@ -3,7 +3,7 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: 'drop',
-      desc: "Drop lines",
+      desc: "Drops lines",
       input: 'lines',
       output: 'lines',
       enabled: true,

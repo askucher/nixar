@@ -1,7 +1,7 @@
 module.exports = (repo, p, parser)->
   repo.commands.push do
-    name: \col
-    desc: "Get specific columns"
+    name: \cols
+    desc: "Get specific columns. Example: cals 1-3 5 6 9-20"
     input: \lines
     output: \lines
     enabled: yes

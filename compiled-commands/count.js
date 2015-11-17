@@ -3,7 +3,7 @@
   module.exports = function(repo){
     return repo.commands.push({
       name: "count",
-      desc: "Calculate count of lines",
+      desc: "Calculates lines count",
       input: 'lines',
       output: 'line',
       enabled: true,

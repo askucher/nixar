@@ -3,7 +3,7 @@
   module.exports = function(repo){
     return repo.commands.push({
       name: "exclude",
-      desc: "Exclude line by founded mask",
+      desc: "Excludes line specified by mask",
       input: 'line',
       output: 'line',
       enabled: true,

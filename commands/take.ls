@@ -1,7 +1,7 @@
 module.exports = (repo, p)->
   repo.commands.push do
     name: "take"
-    desc: "Take lines"
+    desc: "Select lines"
     input: \lines
     output: \lines
     enabled: yes

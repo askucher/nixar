@@ -3,7 +3,7 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "sum",
-      desc: "Calc sum",
+      desc: "Calc sum of numbers in list",
       input: 'lines',
       output: 'line',
       enabled: true,

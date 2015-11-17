@@ -3,7 +3,7 @@
   module.exports = function(repo){
     return repo.commands.push({
       name: "before",
-      desc: "Print everything before mask",
+      desc: "Prints everything before mask",
       input: 'line',
       output: 'line',
       enabled: true,

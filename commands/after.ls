@@ -1,7 +1,7 @@
 module.exports = (repo)->
   repo.commands.push do
     name: "after"
-    desc: "Print everything after mask"
+    desc: "Prints everything after [mask]. Has option 'after last [mask]'"
     input: \line
     output: \line
     enabled: yes

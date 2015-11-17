@@ -1,7 +1,7 @@
 module.exports = (repo)->
   repo.commands.push do
     name: "length"
-    desc: "Calculate count of charecters"
+    desc: "Calculates characters count"
     input: \line 
     output: \line
     enabled: yes

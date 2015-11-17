@@ -3,7 +3,7 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "nixar",
-      desc: "Show all commands",
+      desc: "Shows all commands",
       input: 'nothing',
       output: 'lines',
       enabled: true,

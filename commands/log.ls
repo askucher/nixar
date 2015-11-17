@@ -1,7 +1,7 @@
 module.exports = (repo)->
   repo.commands.push do
     name: "log"
-    desc: "Log output into file and continue printing"
+    desc: "Logs output to file and continues printing"
     input: \line
     output: \line
     enabled: yes

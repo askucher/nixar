@@ -1,7 +1,7 @@
 module.exports = (repo)->
   repo.commands.push do
     name: "exclude"
-    desc: "Exclude line by founded mask"
+    desc: "Excludes line specified by mask"
     input: \line
     output: \line
     enabled: yes

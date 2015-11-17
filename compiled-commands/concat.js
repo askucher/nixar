@@ -3,7 +3,7 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "concat",
-      desc: "Join lines into one line",
+      desc: "Joins lines into one line",
       input: 'lines',
       output: 'line',
       enabled: true,

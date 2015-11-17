@@ -3,7 +3,7 @@
   module.exports = function(repo){
     return repo.commands.push({
       name: "map",
-      desc: "Transform line",
+      desc: "Transforms line",
       input: 'line',
       output: 'line',
       enabled: true,

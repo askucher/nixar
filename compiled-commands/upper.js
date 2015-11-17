@@ -3,7 +3,7 @@
   module.exports = function(repo){
     return repo.commands.push({
       name: "upper",
-      desc: "MAKE UPPERCASE",
+      desc: "Convert characters to uppercase",
       input: 'line',
       output: 'line',
       enabled: true,

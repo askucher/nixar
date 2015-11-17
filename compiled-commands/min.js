@@ -3,7 +3,7 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "min",
-      desc: "Calc maximum number",
+      desc: "Calculates minimum number from list of numbers",
       input: 'lines',
       output: 'line',
       enabled: true,
