@@ -1,7 +1,7 @@
 module.exports = (repo, p)->
   repo.commands.push do
     name: "min"
-    desc: "Calc maximum number"
+    desc: "Calc minimum number"
     input: \lines
     output: \line
     enabled: yes
