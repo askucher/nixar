@@ -1,5 +1,0 @@
-npm remove -g nixardoc
-npm install -g nixardoc
-rm -rf docs
-mkdir docs
-nixardoc
