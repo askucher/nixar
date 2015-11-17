@@ -1,22 +1,15 @@
 {
-  "_npmUser": {
-    "name": "askucher",
-    "email": "a.stegno@gmail.com"
+  "uperversion": "0.1",
+  "subversion": 2026,
+  "homepage": "https://github.com/gruntjs/",
+  "author": {
+    "name": "xm",
+    "url": ""
   },
-  "_npmVersion": "0.1.00",
-  "_from": "prelude@>0.1",
-  "dist": {},
-  "_id": "prelude@0.6.0",
-  "files": [
-    "nixar.js",
-    "compiled-commands",
-    "refs",
-    "docs"
-  ],
-  "name": "nixar",
-  "description": "map, filter and other functions for unix bash",
-  "peerDependencies": {},
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:askucher/prelude.git"
+  },
   "bin": {
     "unique": "./refs/unique",
     "drop": "./refs/drop",
@@ -52,18 +45,12 @@
     "trim": "./refs/trim",
     "turn": "./refs/turn"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:askucher/prelude.git"
+  "keywords": [],
+  "peerDependencies": {},
+  "_npmUser": {
+    "name": "askucher",
+    "email": "a.stegno@gmail.com"
   },
-  "author": {
-    "name": "xm",
-    "url": ""
-  },
-  "homepage": "https://github.com/gruntjs/",
-  "subversion": 2025,
-  "uperversion": "0.1",
-  "version": "0.1.2025",
   "maintainers": [],
   "directories": {},
   "bugs": {
@@ -82,20 +69,33 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "colors": "^1.1.2",
-    "easy-table": "^1.0.0",
-    "event-stream": "^3.3.1",
-    "glob": "^5.0.14",
-    "glob-all": "^3.0.1",
-    "highlight": "^0.2.3",
-    "html-to-json": "^0.5.1",
     "moment": "^2.10.6",
-    "node-syntaxhighlighter": "^0.8.1",
-    "picture-tube": "^1.0.0",
-    "prelude-ls": "^1.1.2",
-    "readline": "0.0.8",
+    "html-to-json": "^0.5.1",
+    "highlight": "^0.2.3",
+    "glob-all": "^3.0.1",
+    "glob": "^5.0.14",
+    "event-stream": "^3.3.1",
+    "yargs": "^3.21.0",
     "xonom": "^0.1.74",
-    "yargs": "^3.21.0"
+    "readline": "0.0.8",
+    "prelude-ls": "^1.1.2",
+    "picture-tube": "^1.0.0",
+    "node-syntaxhighlighter": "^0.8.1",
+    "colors": "^1.1.2",
+    "easy-table": "^1.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "version": "0.1.2026",
+  "description": "map, filter and other functions for unix bash",
+  "name": "nixar",
+  "files": [
+    "nixar.js",
+    "compiled-commands",
+    "refs",
+    "docs"
+  ],
+  "_id": "prelude@0.6.0",
+  "dist": {},
+  "_from": "prelude@>0.1",
+  "_npmVersion": "0.1.00"
 }
