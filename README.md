@@ -48,7 +48,7 @@ Highlight the mask into lines
 #### max
 Calc maximum number
 #### min
-Calc maximum number
+Calc minimum number
 #### nixar
 Show all commands
 #### order
