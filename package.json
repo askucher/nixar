@@ -1,36 +1,13 @@
 {
-  "_from": "prelude@>0.1",
-  "dist": {},
-  "_id": "prelude@0.6.0",
-  "files": [
-    "nixar.js",
-    "compiled-commands",
-    "refs",
-    "docs"
-  ],
-  "name": "nixar",
-  "description": "map, filter and other functions for unix bash",
-  "version": "0.1.2028",
-  "uperversion": "0.1",
-  "dependencies": {
-    "colors": "^1.1.2",
-    "easy-table": "^1.0.0",
-    "highlight": "^0.2.3",
-    "glob-all": "^3.0.1",
-    "glob": "^5.0.14",
-    "event-stream": "^3.3.1",
-    "html-to-json": "^0.5.1",
-    "moment": "^2.10.6",
-    "readline": "0.0.8",
-    "prelude-ls": "^1.1.2",
-    "picture-tube": "^1.0.0",
-    "node-syntaxhighlighter": "^0.8.1",
-    "xonom": "^0.1.74",
-    "yargs": "^3.21.0"
+  "homepage": "https://github.com/gruntjs/",
+  "author": {
+    "name": "xm",
+    "url": ""
   },
-  "devDependencies": {},
-  "peerDependencies": {},
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:askucher/prelude.git"
+  },
   "bin": {
     "unique": "./refs/unique",
     "drop": "./refs/drop",
@@ -66,16 +43,26 @@
     "trim": "./refs/trim",
     "turn": "./refs/turn"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:askucher/prelude.git"
+  "keywords": [],
+  "peerDependencies": {},
+  "devDependencies": {},
+  "dependencies": {
+    "moment": "^2.10.6",
+    "html-to-json": "^0.5.1",
+    "highlight": "^0.2.3",
+    "glob-all": "^3.0.1",
+    "glob": "^6.0.1",
+    "event-stream": "^3.3.1",
+    "yargs": "^3.21.0",
+    "xonom": "^0.1.74",
+    "readline": "0.0.8",
+    "prelude-ls": "^1.1.2",
+    "picture-tube": "^1.0.0",
+    "node-syntaxhighlighter": "^0.8.1",
+    "colors": "^1.1.2",
+    "easy-table": "^1.0.0"
   },
-  "author": {
-    "name": "xm",
-    "url": ""
-  },
-  "homepage": "https://github.com/gruntjs/",
-  "subversion": 2028,
+  "_from": "prelude@>0.1",
   "_npmVersion": "0.1.00",
   "_npmUser": {
     "name": "askucher",
@@ -97,5 +84,18 @@
   },
   "scripts": {
     "test": "grunt test"
-  }
+  },
+  "subversion": 2029,
+  "uperversion": "0.1",
+  "version": "0.1.2029",
+  "description": "map, filter and other functions for unix bash",
+  "name": "nixar",
+  "files": [
+    "nixar.js",
+    "compiled-commands",
+    "refs",
+    "docs"
+  ],
+  "_id": "prelude@0.6.0",
+  "dist": {}
 }
