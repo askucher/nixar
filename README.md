@@ -12,7 +12,7 @@ Prints everything after [mask]. Has option 'after last [mask]'
 #### before
 Prints everything before mask
 #### cols
-Get specific columns. Example: cals 1-3 5 6 9-20
+Get specific columns. Example: `cols 1-3 5 6 9-20`
 #### concat
 Joins lines into one line
 #### content

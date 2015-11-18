@@ -3,7 +3,7 @@
   module.exports = function(repo, p, parser){
     return repo.commands.push({
       name: 'cols',
-      desc: "Get specific columns. Example: cals 1-3 5 6 9-20",
+      desc: "Get specific columns. Example: `cols 1-3 5 6 9-20`",
       input: 'lines',
       output: 'lines',
       enabled: true,
