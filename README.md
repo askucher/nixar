@@ -66,7 +66,7 @@ Create columns from line based on separator
 #### take
 Select lines
 #### trim
-Remove spaces from start and end of line. But if you profide the substring it will remove it from start and end of line
+Remove spaces from start and end of line. But if you provide the substring it will remove it from start and end of line
 #### turn
 Rotate the table. Convert rows to cols and cols to rows. This command can replace concat and split commands
 #### unique
