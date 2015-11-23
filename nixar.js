@@ -256,7 +256,6 @@
         if (typeof nothingLines[cmd] == 'function') {
           nothingLines[cmd](null, argv, printLines);
         }
-        process.exit(0);
         return;
       }
       readline = require('readline');
