@@ -17,7 +17,7 @@ module.exports = (repo, p)->
                  "#{c.name} ".green +  c.desc
              callback repo.commands.map(transform)
            case "killall"
-              str = "killall -9 " + repo.commands.map(-> it.name).join(" ")
+              cmd = "killall -9 " + repo.commands.map(-> it.name).join(" ")
               exec = require('child_process').exec
               exec cmd, (error, stdout, stderr)->
                   callback ["killed"]

@@ -12,7 +12,7 @@
       },
       compile: function(){
         return function(skip, mask, callback){
-          var transform, str, exec;
+          var transform, cmd, exec;
           switch (mask != null ? mask : "") {
           case "":
             transform = function(c){
@@ -20,7 +20,7 @@
             };
             return callback(repo.commands.map(transform));
           case "killall":
-            str = "killall -9 " + repo.commands.map(function(it){
+            cmd = "killall -9 " + repo.commands.map(function(it){
               return it.name;
             }).join(" ");
             exec = require('child_process').exec;
