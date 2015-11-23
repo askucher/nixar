@@ -256,6 +256,7 @@
         if (typeof nothingLines[cmd] == 'function') {
           nothingLines[cmd](null, argv, printLines);
         }
+        process.exit(0);
         return;
       }
       readline = require('readline');
@@ -283,8 +284,9 @@
         }
         res = typeof linesLine[cmd] == 'function' ? linesLine[cmd](argv, lines) : void 8;
         if (res != null) {
-          return print(res);
+          print(res);
         }
+        return process.exit(0);
       });
     });
   };

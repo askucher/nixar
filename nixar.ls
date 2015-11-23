@@ -169,6 +169,7 @@ module.exports = (cmd)->
       
       if nothing-lines[cmd]?
         nothing-lines[cmd]?(null, argv, print-lines)
+        process.exit 0
         return
       readline = require \readline
       rl = readline.create-interface do
@@ -186,3 +187,4 @@ module.exports = (cmd)->
         res = lines-line[cmd]?(argv, lines)
         if res?
           print res
+        process.exit 0
