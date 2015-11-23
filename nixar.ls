@@ -1,4 +1,5 @@
 module.exports = (cmd)->
+  process.title = cmd
   require \xonom
     .service \start, ->
     .run ->
