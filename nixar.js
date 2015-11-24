@@ -202,7 +202,7 @@
           };
         }
       };
-    }).run(__dirname + "/compiled-commands/*.js").run(function(repo, p){
+    }).run(__dirname + "/compiled-commands/" + cmd + ".js").run(function(repo, p){
       var jargs, argv, lines, print, printLines, commands, build, nothingLines, lineLines, lineLine, linesLines, linesLine, readline, rl;
       jargs = require('yargs').completion('completion', function(current, argv){
         return ['foo', 'bar'];
