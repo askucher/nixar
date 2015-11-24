@@ -215,7 +215,10 @@
         }
       };
       printLines = function(items){
-        return items != null ? items.forEach(print) : void 8;
+        if (items != null) {
+          items.forEach(print);
+        }
+        return process.exit(0);
       };
       commands = repo.commands;
       p.each(bind$(commands, 'push'))(

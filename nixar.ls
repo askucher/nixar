@@ -149,6 +149,7 @@ module.exports = (cmd)->
         console.log(res) if res?
       print-lines = (items)->
         items?for-each(print)
+        process.exit 0
       const commands =
           repo.commands
       commands |> p.filter -> it.aliases? and it.enabled
