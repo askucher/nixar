@@ -3,7 +3,7 @@
   module.exports = function(repo, p){
     return repo.commands.push({
       name: "nixar",
-      desc: "Shows all commands",
+      desc: "Shows all commands. Run `nixar killall` in order to kill all running nixar's commands",
       input: 'nothing',
       output: 'lines',
       enabled: true,

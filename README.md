@@ -42,7 +42,7 @@ Calculates maximum number from list of numbers
 #### min
 Calculates minimum number from list of numbers
 #### nixar
-Shows all commands
+Shows all commands. Run `nixar killall` in order to kill all running nixar's commands
 #### order
 Sorts lines
 #### remove
