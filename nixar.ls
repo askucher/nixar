@@ -1,4 +1,7 @@
 module.exports = (cmd)->
+  load = 
+    | cmd is \nixar => \*
+    | _ => cmd
   process.title = cmd
   require \xonom
     .service \start, ->
@@ -132,7 +135,7 @@ module.exports = (cmd)->
                callback [res.join('')]
                res.length = 0
             fs.create-read-stream(input).pipe(tube).pipe(es.through(print, end))
-    .run "#{__dirname}/compiled-commands/#cmd.js"
+    .run "#{__dirname}/compiled-commands/#load.js"
     .run (repo, p)->
       jargs = 
         require('yargs')
