@@ -295,9 +295,8 @@
         }
         res = typeof linesLine[cmd] == 'function' ? linesLine[cmd](argv, lines) : void 8;
         if (res != null) {
-          print(res);
+          return print(res);
         }
-        return process.exit(0);
       });
     });
   };

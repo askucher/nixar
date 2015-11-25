@@ -191,4 +191,4 @@ module.exports = (cmd)->
         res = lines-line[cmd]?(argv, lines)
         if res?
           print res
-        process.exit 0
+        #process.exit 0
