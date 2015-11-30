@@ -228,9 +228,8 @@
       lines = [];
       print = function(res){
         if (res != null) {
-          console.log(res);
+          return console.log(res);
         }
-        return setTimer();
       };
       printLines = function(items){
         return items != null ? items.forEach(print) : void 8;

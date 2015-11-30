@@ -156,7 +156,7 @@ module.exports = (cmd)->
       lines = []
       print = (res)->
         console.log(res) if res?
-        set-timer!
+        #set-timer!
       print-lines = (items)->
         items?for-each(print)
         #process.exit 0
