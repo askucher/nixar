@@ -142,14 +142,21 @@ module.exports = (cmd)->
           .completion \completion , (current, argv)->
               ['foo','bar']
           .argv
-      #console.log jargs._.join(' ')
-      #cmd = process.argv.1.match(/[a-z]+$/i).0
       argv = jargs._.join(' ')
-      #console.log \cmd, cmd
-      #console.log process.mainModule
+      
+      timer = null 
+      
+      set-timer = ->
+        clear-timeout timer
+        timer = 
+          set-timeout do 
+            * ->
+                process.exit 0
+            * 20 * 1000
       lines = []
       print = (res)->
         console.log(res) if res?
+        set-timer!
       print-lines = (items)->
         items?for-each(print)
         #process.exit 0

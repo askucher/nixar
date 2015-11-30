@@ -212,16 +212,25 @@
         }
       };
     }).run(__dirname + "/compiled-commands/" + load + ".js").run(function(repo, p){
-      var jargs, argv, lines, print, printLines, commands, build, nothingLines, lineLines, lineLine, linesLines, linesLine, readline, rl;
+      var jargs, argv, timer, setTimer, lines, print, printLines, commands, build, nothingLines, lineLines, lineLine, linesLines, linesLine, readline, rl;
       jargs = require('yargs').completion('completion', function(current, argv){
         return ['foo', 'bar'];
       }).argv;
       argv = jargs._.join(' ');
+      timer = null;
+      setTimer = function(){
+        var timer;
+        clearTimeout(timer);
+        return timer = setTimeout(function(){
+          return process.exit(0);
+        }, 20 * 1000);
+      };
       lines = [];
       print = function(res){
         if (res != null) {
-          return console.log(res);
+          console.log(res);
         }
+        return setTimer();
       };
       printLines = function(items){
         return items != null ? items.forEach(print) : void 8;
