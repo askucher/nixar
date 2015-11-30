@@ -152,7 +152,7 @@ module.exports = (cmd)->
         console.log(res) if res?
       print-lines = (items)->
         items?for-each(print)
-        process.exit 0
+        #process.exit 0
       const commands =
           repo.commands
       commands |> p.filter -> it.aliases? and it.enabled
@@ -191,4 +191,4 @@ module.exports = (cmd)->
         res = lines-line[cmd]?(argv, lines)
         if res?
           print res
-        #process.exit 0
+        process.exit 0

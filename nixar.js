@@ -224,10 +224,7 @@
         }
       };
       printLines = function(items){
-        if (items != null) {
-          items.forEach(print);
-        }
-        return process.exit(0);
+        return items != null ? items.forEach(print) : void 8;
       };
       commands = repo.commands;
       p.each(bind$(commands, 'push'))(
@@ -295,8 +292,9 @@
         }
         res = typeof linesLine[cmd] == 'function' ? linesLine[cmd](argv, lines) : void 8;
         if (res != null) {
-          return print(res);
+          print(res);
         }
+        return process.exit(0);
       });
     });
   };
