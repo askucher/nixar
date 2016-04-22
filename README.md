@@ -1,3 +1,5 @@
+Website address is 'http://askucher.github.io/'
+
 # New shell commands
 Joyable equivalents for existent linux commands
 
