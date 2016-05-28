@@ -15,6 +15,7 @@
           if ((mask != null ? mask : "") === "") {
             return (input != null ? input : "") === "" ? null : input;
           }
+          mask = mask.replace(/\\/g, '\\\\');
           if (input.match(mask)) {
             return input.split(mask).join(mask.yellow);
           } else {
