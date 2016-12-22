@@ -1,4 +1,4 @@
-Website address is 'http://askucher.github.io/nixarweb'
+Website address is 'http://askucher.github.io/nixarweb/#/'
 
 # New shell commands
 Joyable equivalents for existent linux commands
