@@ -7,7 +7,7 @@ Joyable equivalents for existent linux commands
 
 npm install -g nixar
 
-###Commands
+### Commands
 
 #### after
 Prints everything after [mask]. Has option 'after last [mask]'
