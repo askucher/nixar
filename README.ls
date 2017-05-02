@@ -8,14 +8,15 @@ require \xonom
     .run (repo, p)->
       lines = []
       $ = lines~push
-      $ '# New shell commands'
-      $ 'Joyable equivalents for existent linux commands'
+      $ '# Modern shell commands'
+      $ 'Handy alternative to old school linux commands, implemented in functional wayФ
       $ ''
       $ '![Nixar](http://content.screencast.com/users/a.stegno/folders/Jing/media/cf29f8c0-b343-4692-9e05-1ff44f37f48d/00000255.png)'
       $ ''
       $ 'npm install -g nixar'
       $ ''
-      $ '###Commands'
+      $ '## Commands'
+      $ 'See full docs [here](http://askucher.github.io/nixarweb/#/doc)'
       $ ''
       repo.commands.for-each (cmd)->
           $ "#### #{cmd.name}"
